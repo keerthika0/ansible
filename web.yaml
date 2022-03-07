@@ -10,9 +10,7 @@
 
   - name: Start Apache Services
     service: name=apache2 enabled=yes state=started
-    
-  - name: Copy Site Files
-    template: src=templates/index.j2 dest={{ doc_root }}/index.html mode=0664
+
 
 
   

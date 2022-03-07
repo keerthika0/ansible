@@ -6,12 +6,11 @@
 
   tasks:
   - name: Ensure that Apache is installed
-    apt: name=apache2 state=present
-    become: yes
+    apt: name=apache2 state=latest
 
   - name: Start Apache Services
     service: name=apache2 enabled=yes state=started
-    become: yes
+
 
 
 

@@ -1,0 +1,21 @@
+---
+  - hosts: all
+    tasks:
+
+       - name: install nodejs 
+         apt: name=nodejs update_cache=yes state=latest
+         become: yes
+ 
+       - name: install NPM
+         shell: npm i
+         args:
+           chdir: /home/santhosh 
+      
+       - name: install mongodb
+         apt: name=mongodb state=present
+         become: yes
+        
+       - name: install PM2
+         npm:
+           name: pm2
+           global: yes

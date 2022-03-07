@@ -9,7 +9,7 @@
        - name: install NPM
          shell: npm i
          args:
-           chdir: /home/santhosh 
+           chdir: /home/keerthika 
       
        - name: install mongodb
          apt: name=mongodb state=present

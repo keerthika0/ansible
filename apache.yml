@@ -1,6 +1,6 @@
 ---
 - name: Update web servers
-  hosts: local
+  hosts: webservers
   remote_user: keerthika
 
   tasks:

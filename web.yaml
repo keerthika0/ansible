@@ -1,5 +1,5 @@
 ---
-- hosts: webservers
+- hosts: 10.1.40.43
   remote_user: keerthika
   vars:
     http_port: 80
